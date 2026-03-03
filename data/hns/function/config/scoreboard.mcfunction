@@ -5,8 +5,8 @@ scoreboard objectives add timers dummy
 scoreboard objectives add boolean dummy
 scoreboard objectives add random dummy
 
-scoreboard objectives add greenKills killedByTeam.yellow
-scoreboard objectives add yellowKills killedByTeam.green
+scoreboard objectives add greenKills killedByTeam.green
+scoreboard objectives add yellowKills killedByTeam.yellow
 
 
 # Create Variables
