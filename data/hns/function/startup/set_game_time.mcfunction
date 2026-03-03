@@ -7,7 +7,7 @@ $scoreboard players set game_time timers $(time)
 # Multiple time by 20 to convert seconds to ticks
 
 scoreboard players operation game_time timers *= tick timers
-scoreboard players operation game_time timers /= seconds timers
+scoreboard players operation game_time timers *= seconds timers
 
 # Set Bossbar Time to Match Game Time
 

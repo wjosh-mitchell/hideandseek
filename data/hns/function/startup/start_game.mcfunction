@@ -1,10 +1,5 @@
 # Start the Game
 
-# Check Which Map is Selected
-
-
-#execute if score selectedMap variable matches 0 run return run tellraw @a {"text":"No map selected! Please select a map before starting the game.","color":"red"}
-
 # Change Boolean to Indicate Game is Active
 
 scoreboard players set gameActive boolean 1
@@ -13,6 +8,11 @@ scoreboard players set gameActive boolean 1
 # Assign Teams to Players
 
 function hns:startup/assign_teams
+
+
+# Debuff Seekers
+
+function hns:startup/seeker_debuff
 
 
 # Announce Game Start

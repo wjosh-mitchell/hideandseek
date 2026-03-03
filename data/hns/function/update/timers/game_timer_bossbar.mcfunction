@@ -3,10 +3,6 @@
 bossbar set game_timer visible true
 bossbar set game_timer players @a
 
-# Update Bossbar Max Value
-
-execute store result bossbar game_timer max run scoreboard players get respawnTime timers
-
 # Update Bossbar Value
 
 execute store result bossbar game_timer value run scoreboard players get game_time timers
@@ -15,9 +11,9 @@ execute store result bossbar game_timer value run scoreboard players get game_ti
 
 scoreboard players operation game_time timers = game_time_seconds timers
 
-scoreboard players operation game_time_minutes timers /= tick timers
-scoreboard players operation game_time_minutes timers /= seconds timers
+scoreboard players operation game_time_min timers /= tick timers
+
 
 # Update Bossbar Name with Current Time
 
-bossbar set game_timer name {"text":"Time Remaining: ","color":"white","extra":[{"score":{"name":"game_time_minutes","objective":"timers"}}]}
+bossbar set game_timer name {"text":"Time Remaining: ","color":"white","extra":[{"score":{"name":"game_time_min","objective":"timers"}}]}

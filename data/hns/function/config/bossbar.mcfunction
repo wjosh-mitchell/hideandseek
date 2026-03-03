@@ -10,7 +10,6 @@ bossbar add respawn "Respawning in: %s seconds"
 
 bossbar set yellow color yellow
 bossbar set yellow style notched_10
-bossbar set yellow value 0
 
 
 # Modify Respawn Bossbar
