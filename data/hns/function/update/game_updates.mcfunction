@@ -2,5 +2,5 @@
 
 # Start Team Kill and Bossbar Updates
 
-function tdm:update/score/team_kills
-function tdm:update/score/team_point_bossbars
+function hns:update/score/team_kills
+function hns:update/score/team_point_bossbars

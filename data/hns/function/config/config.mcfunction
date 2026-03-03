@@ -1,18 +1,18 @@
 # Create Teams
 
-function tdm:config/teams
+function hns:config/teams
 
 
 # Create Scoreboards & Objectives
 
-function tdm:config/scoreboard
+function hns:config/scoreboard
 
 
 # Create Bossbars
 
-function tdm:config/bossbar
+function hns:config/bossbar
 
 
 # Create Armor Stands
 
-function tdm:config/armor_stands
+function hns:config/armor_stands

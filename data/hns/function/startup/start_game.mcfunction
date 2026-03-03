@@ -12,7 +12,7 @@ scoreboard players set gameActive boolean 1
 
 # Assign Teams to Players
 
-function tdm:startup/assign_teams
+function hns:startup/assign_teams
 
 
 # Announce Game Start
@@ -24,4 +24,4 @@ tellraw @a {"text":"Max score is set to ","color":"white","extra":[{"score":{"na
 
 # Teleport Players to Random Spawn
 
-function tdm:startup/teleport_to_random_spawn
+function hns:startup/teleport_to_random_spawn
