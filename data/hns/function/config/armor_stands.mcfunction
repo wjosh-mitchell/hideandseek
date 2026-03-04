@@ -10,4 +10,8 @@ summon armor_stand -9 -29 15 {Tags:["green_spawn","reset"],NoGravity:1b,Invulner
 summon armor_stand -9 -29 13 {Tags:["green_spawn","reset"],NoGravity:1b,Invulnerable:1b,Marker:1b}
 summon armor_stand -9 -29 11 {Tags:["green_spawn","reset"],NoGravity:1b,Invulnerable:1b,Marker:1b}
 summon armor_stand -9 -29 9 {Tags:["green_spawn","reset"],NoGravity:1b,Invulnerable:1b,Marker:1b}
+<<<<<<< HEAD
 summon armor_stand -9 -29 7 {Tags:["green_spawn","reset"],NoGravity:1b,Invulnerable:1b,Marker:1b}
+=======
+summon armor_stand -9 -29 7 {Tags:["green_spawn","reset"],NoGravity:1b,Invulnerable:1b,Marker:1b}
+>>>>>>> c191b3406cb4761731c1ec2ae83b852e61879523
