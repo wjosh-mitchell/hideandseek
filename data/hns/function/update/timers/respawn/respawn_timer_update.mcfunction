@@ -3,7 +3,7 @@
 execute as @a[tag=respawning] run tp @s @e[tag=yellow_spawn,limit=1,sort=random]
 
 
-# Give Negative Effects and Equipment to Respawning Players
+# Give Negative Effects to Respawning Players
 
 execute as @a[tag=respawning] run effect give @s slowness 1 255 true
 execute as @a[tag=respawning] run effect give @s mining_fatigue 1 255 true
