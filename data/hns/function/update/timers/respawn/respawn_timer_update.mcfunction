@@ -12,8 +12,6 @@ execute as @a[tag=respawning] run effect give @s glowing 1 255 true
 execute as @a[tag=respawning] run effect give @s resistance 1 255 true
 execute as @a[tag=respawning] run effect give @s weakness 1 255 true
 
-execute as @a[tag=respawning] run function hns:startup/equipment/seeker_midgame
-
 
 # Let Player Know How Much Time is Left Until They Respawn
 
