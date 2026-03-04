@@ -1,28 +1,19 @@
-# Run Updates if Game is Started
+# Update Amount of Hiders
 
-# Check if Game has Ended
-
-function hns:cleanup/game_over
+function hns:update/score/count_hiders_bossbar_update
 
 
-# Debuff Seekers
+# Decrease All Timers 
 
-function hns:startup/seeker_debuff
+function hns:update/timers/timer_update
 
 
-# Start Timer
-
-execute if score timerStarted boolean matches 1.. run function hns:update/timers/timer_update
+# Call Game Timer Functions
 
 function hns:update/timers/game_timer_bossbar
 
 
-# Start Team Kill and Bossbar Updates
+# Call Respawn Timer Functions
 
-function hns:update/score/team_kills
-function hns:update/score/team_point_bossbars
-
-
-# Check Deaths and Start Respawn Timer
-
-function hns:update/timers/respawn/respawn_delay
+function hns:update/timers/respawn/respawn_timer_initalize
+function hns:update/timers/respawn/respawn_timer_update

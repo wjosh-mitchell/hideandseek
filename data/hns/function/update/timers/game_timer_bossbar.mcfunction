@@ -1,19 +1,21 @@
-# Set Bossbar Time Visible
+# Update Bossbar on Current Game Timer
 
-bossbar set game_timer visible true
-bossbar set game_timer players @a
+execute store result bossbar minecraft:game_timer value run scoreboard players get game_time timers
 
-# Update Bossbar Value
 
-execute store result bossbar game_timer value run scoreboard players get game_time timers
+# Ensure Game Timer Cannot Reach Below 0
 
-# Update Variable for Game Time to Minutes
+execute if score game_time timers matches ..0 run scoreboard players set game_time timers 0
 
-scoreboard players operation game_time timers = game_time_seconds timers
 
+# Update Game Timer in Seconds
+
+scoreboard players add game_time_min timers 0
+
+scoreboard players operation game_time_min timers = game_time timers
 scoreboard players operation game_time_min timers /= tick timers
 
 
-# Update Bossbar Name with Current Time
+# Display Game Timer in Seconds on Bossbar
 
 bossbar set game_timer name {"text":"Time Remaining: ","color":"white","extra":[{"score":{"name":"game_time_min","objective":"timers"}}]}

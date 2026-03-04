@@ -10,15 +10,9 @@ scoreboard players set gameActive boolean 1
 function hns:startup/assign_teams
 
 
-# Debuff Seekers
-
-function hns:startup/seeker_debuff
-
-
 # Announce Game Start
 
 title @a title {"text":"Game Start!"}
-
 
 tellraw @a {"text":"There are ","color":"white","extra":[{"score":{"name":"hiderAmount","objective":"variable"}}], "text":" Hider(s)!"}
 
@@ -26,3 +20,9 @@ tellraw @a {"text":"There are ","color":"white","extra":[{"score":{"name":"hider
 # Teleport Players to Random Spawn
 
 function hns:startup/teleport_to_random_spawn
+
+
+# Give Players Starting Equipment
+
+function hns:startup/equipment/hider_start
+function hns:startup/equipment/seeker_start
