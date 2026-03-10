@@ -10,11 +10,15 @@ scoreboard players set gameActive boolean 1
 function hns:startup/assign_teams
 
 
+# Check if there are enough players to start the game
+
+execute if score seekerAmount variable matches ..0 run return run tellraw @a {"text":"Not enough seekers to start the game!","color":"red"}
+execute if score hiderAmount variable matches ..0 run return run title @a title {"text":"Not enough hiders to start the game!","color":"red"}\
+
+
 # Announce Game Start
 
 title @a title {"text":"Game Start!"}
-
-tellraw @a {"text":"There are ","color":"white","extra":[{"score":{"name":"hiderAmount","objective":"variable"}}], "text":" Hider(s)!"}
 
 
 # Teleport Players to Random Spawn

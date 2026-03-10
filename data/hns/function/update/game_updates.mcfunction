@@ -1,4 +1,9 @@
-# Update Amount of Hiders
+# Count Players in Each Team and Store in Scores
+
+function hns:update/count_players
+
+
+# Update Amount of Hiders in Bossbar
 
 function hns:update/score/count_hiders_bossbar_update
 
