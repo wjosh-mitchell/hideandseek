@@ -15,7 +15,7 @@ function hns:startup/assign_teams
 function hns:update/count_players
 
 execute if score seekerAmount variable matches ..0 run return run tellraw @a {"text":"Not enough seekers to start the game!","color":"red"}
-execute if score hiderAmount variable matches ..0 run return run title @a title {"text":"Not enough hiders to start the game!","color":"red"}\
+execute if score hiderAmount variable matches ..0 run return run tellraw @a {"text":"Not enough hiders to start the game!","color":"red"}\
 
 
 # Announce Game Start
