@@ -1,0 +1,1 @@
+scoreboard players set gameActive boolean 0

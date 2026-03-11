@@ -12,4 +12,4 @@ execute if score game_time timers matches 0 run function hns:end/hider_win
 
 # If the game is over, reset the game state
 
-scoreboard players set gameActive boolean 0
+execute if score gameOver variable matches 1.. run function hns:end/game_over
