@@ -1,5 +1,5 @@
 # Set Inputted Time via a Macro
-# Use: /function hns:startup/set_game_time <time_value>
+# Use: /function hns:startup/set_game_time <time_value minutes>
 
 $scoreboard players set game_time timers $(time)
 
