@@ -3,6 +3,11 @@
 function hns:update/count_players
 
 
+# Updates Bossbars
+
+function hns:update/bossbar_update
+
+
 # Update Amount of Hiders in Bossbar
 
 function hns:update/score/count_hiders_bossbar_update

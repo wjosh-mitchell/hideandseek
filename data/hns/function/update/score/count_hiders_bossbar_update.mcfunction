@@ -1,8 +1,3 @@
-# Add Everyone to the Bossbar
-
-bossbar set minecraft:yellow players @a
-
-
 # Update Bossbar Value to Match Hider Count
 
 execute store result bossbar yellow value run scoreboard players get hiderAmount variable
