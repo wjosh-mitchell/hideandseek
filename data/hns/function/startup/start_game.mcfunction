@@ -14,8 +14,8 @@ function hns:startup/assign_teams
 
 function hns:update/count_players
 
-execute if score seekerAmount variable matches ..0 run return run tellraw @a {"text":"Not enough hiders to start the game!","color":"red"}
-execute if score hiderAmount variable matches ..0 run return run tellraw @a {"text":"Not enough seekers to start the game!","color":"red"}
+execute if score seekerAmount variable matches ..0 run return run tellraw @a {"text":"Not enough seekers to start the game!","color":"red"}
+execute if score hiderAmount variable matches ..0 run return run tellraw @a {"text":"Not enough hiders to start the game!","color":"red"}
 
 # If there are enough players, count hiders for max bossbar
 
@@ -23,7 +23,7 @@ execute store result bossbar yellow max run scoreboard players get hiderAmount v
 
 # Check to see if the timer is greater than 0
 
-execute if score timer variable matches ..0 run return run tellraw @a {"text":"Timer is not set!","color":"red"}
+execute if score game_time timers matches ..0 run return run tellraw @a {"text":"Timer is not set!","color":"red"}
 
 
 # Announce Game Start

@@ -1,0 +1,1 @@
+tellraw @a {"text":"No Hiders Left! Seekers Win!","color":"yellow"}
