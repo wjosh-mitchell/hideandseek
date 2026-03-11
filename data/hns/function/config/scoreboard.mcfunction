@@ -6,6 +6,7 @@ scoreboard objectives add boolean dummy
 scoreboard objectives add random dummy
 
 scoreboard objectives add deaths deathCount
+scoreboard objectives add kills playerKillCount
 
 
 # Create Variables

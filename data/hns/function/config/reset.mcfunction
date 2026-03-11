@@ -11,6 +11,9 @@ scoreboard objectives remove boolean
 scoreboard objectives remove random
 scoreboard objectives remove variable
 
+scoreboard objectives remove deaths
+scoreboard objectives remove kills
+
 
 # Remove Bossbars
 

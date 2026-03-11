@@ -22,3 +22,8 @@ function hns:update/timers/game_timer_bossbar
 
 function hns:update/timers/respawn/respawn_timer_initalize
 function hns:update/timers/respawn/respawn_timer_update
+
+
+# Count Player Kills
+
+function hns:update/player_kills
